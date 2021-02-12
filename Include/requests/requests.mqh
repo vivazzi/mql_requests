@@ -155,7 +155,7 @@ public:
         };
 
         // append _str_data to end of url
-        if (_str_data != "") {
+        if (_str_data != "" && _str_data != NULL) {
             int index = StringFind(url, "?");
             if (index >=0) {
                 if (index != StringLen(url) - 1) url += "&";
