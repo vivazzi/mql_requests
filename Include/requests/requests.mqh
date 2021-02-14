@@ -38,7 +38,7 @@ string nill = "";
 #define INTERNET_FLAG_PRAGMA_NOCACHE      0x00000100
 #define INTERNET_FLAG_KEEP_CONNECTION     0x00400000
 #define INTERNET_FLAG_SECURE              0x00800000
-#define INTERNET_FLAG_RELOAD              0x80000000  // get a page from server when accessing it
+#define INTERNET_FLAG_RELOAD              0x80000000
 #define INTERNET_OPTION_SECURITY_FLAGS    31
 
 #define ERROR_INTERNET_INVALID_CA         12045
@@ -236,7 +236,7 @@ public:
 	    int trying = 0;
         while (trying < 3) {
             trying++;
-            h_send = HttpSendRequestW(h_request, headers, StringLen(headers), data, ArraySize(data)); // отправили файл
+            h_send = HttpSendRequestW(h_request, headers, StringLen(headers), data, StringLen(_str_data));
             if (h_send <= 0)  {
                 int err = 0; err = GetLastError(err); Print("requests: ERROR HttpSendRequestW = " + (string)err + " (" + (string)trying + " trying)");
                 if (err != ERROR_INTERNET_INVALID_CA) {
