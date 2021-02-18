@@ -5,7 +5,7 @@ Requests lib allows you to send HTTP/1.1 requests easily.
 
 ## Installing
 
-Download repo and copy "mql_requests/Include/requests" folder to "\<TERMINAL DIR>/MQL(4/5)/Include"
+Download repo and copy `mql_requests/Include/requests` folder to `<TERMINAL DIR>/MQL(4/5)/Include`
 
 ## Simple usage
 
@@ -36,7 +36,7 @@ string method = "POST";
 response = requests.send(method, "https://site.com/some/url", "par=foo&par_2=bar");
 ```
 
-Using requests.get(), you can use GET-parameter in url and data together. Next examples are equivalent:
+Using `requests.get()`, you can use GET-parameter in url and data together. Next examples are equivalent:
 
 ```mql4
 response = requests.get("https://site.com/some/url?par=foo&par_2=bar");
@@ -80,7 +80,7 @@ Print("Response parameters: " + response.parameters);
 
 ## Detailed information of using Requests
 
-You can define DEBUG_REQUESTS for display more detailed information of usage Requests:
+You can define `DEBUG_REQUESTS` for display more detailed information of usage `Requests`:
 
 ```mql4
 #include "lib/requests.mqh"
@@ -95,12 +95,12 @@ int OnInit(){
 }
 ```
 
-With DEBUG_REQUESTS you will an addition information to Terminal/Experts.
+With `DEBUG_REQUESTS` you will an addition information to journal `Terminal/Experts`.
 
 
 ## API RequestData
 
-RequestData is helper class for simple create request data.
+`RequestData` is helper class for simple create request data.
 
 USAGE:
 
@@ -114,7 +114,7 @@ Response response = requests.get(url, request_data);
 Print("Response: " + response.text);
 ```
 
-You can replace value of pair using the same name in request_data.add():
+You can replace value of pair using the same name in `request_data.add()`:
 
 ```mql4
 RequestData request_data;
@@ -129,7 +129,7 @@ Print(request_data.to_str());
 // "par_1=foo&par_2=super_bar"
 ```
 
-Use request_data.remove() for clear data and fill request_data new data:
+Use `request_data.remove()` for clear data and fill `request_data` new data:
 
 ```mql4
 RequestData request_data;
@@ -148,7 +148,7 @@ Print(request_data.to_str());
 // ""
 ```
 
-Use static method to_str(string& _data[][]) if you have an array of pairs:
+Use static method `to_str(string& _data[][])` if you have an array of pairs:
 
 ```mql4
 string array_data[2][2];
@@ -160,10 +160,10 @@ Print(RequestData::to_str(array_data));
 
 ## Run tests
 
-1. Copy "mql_requests/Experts/TestRequest.mq4" to "\<TERMINAL DIR>/MQL(4/5)/Experts"
-2. Download [mql_unit_test](https://github.com/vivazzi/mql_unit_test/) and copy "mql_unit_test/Include/unit_test" folder to "\<TERMINAL DIR>/MQL(4/5)/Include"
+1. Copy `mql_requests/Experts/TestRequest.mq4` to `<TERMINAL DIR>/MQL(4/5)/Experts`
+2. Download [mql_unit_test](https://github.com/vivazzi/mql_unit_test/) and copy `mql_unit_test/Include/unit_test` folder to `<TERMINAL DIR>/MQL(4/5)/Include`
 3. Compile TestRequest.mq4 and run TestRequest.ex4 in terminal in a window of any trading pair.
-4. Look test result in "\<TERMINAL DIR>/Files/TestRequests_unit_test_log.txt"
+4. Look test result in `<TERMINAL DIR>/Files/TestRequests_unit_test_log.txt`
 
 # CONTRIBUTING
 
