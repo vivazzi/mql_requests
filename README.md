@@ -10,7 +10,7 @@ Download repo and copy `mql_requests/Include/requests` folder to `<TERMINAL DIR>
 ## Simple usage
 
 ```mql4
-#include "lib/requests.mqh"
+#include <requests/requests.mqh>
 
 int OnInit(){
     ...
