@@ -5,7 +5,7 @@ Requests lib allows you to send HTTP/1.1 requests easily.
 
 ## Installing
 
-Download repo and copy `mql_requests/Include/requests` folder to `<TERMINAL DIR>/MQL(4/5)/Include`
+Download repo and copy `mql_requests/Include/requests.mqh` folder to `<TERMINAL DIR>/MQL(4/5)/Include`
 
 ## Simple usage
 
@@ -161,8 +161,8 @@ Print(RequestData::to_str(array_data));
 ## Run tests
 
 1. Copy `mql_requests/Experts/TestRequest.mq4` to `<TERMINAL DIR>/MQL(4/5)/Experts`
-2. Download [mql_unit_test](https://github.com/vivazzi/mql_unit_test/) and copy `mql_unit_test/Include/unit_test` folder to `<TERMINAL DIR>/MQL(4/5)/Include`
-3. Compile TestRequest.mq4 and run TestRequest.ex4 in terminal in a window of any trading pair.
+2. Download [mql_unit_test](https://github.com/vivazzi/mql_unit_test/) and copy `mql_unit_test/Include/unit_test.mqh` folder to `<TERMINAL DIR>/MQL(4/5)/Include`
+3. Compile and run TestRequest.ex4 in terminal in a window of any trading pair.
 4. Look test result in `<TERMINAL DIR>/Files/TestRequests_unit_test_log.txt`
 
 # CONTRIBUTING
