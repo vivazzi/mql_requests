@@ -162,14 +162,14 @@ Print(RequestData::to_str(array_data));
 
 1. Copy `mql_requests/Experts/TestRequest.mq4` to `<TERMINAL DIR>/MQL(4/5)/Experts`
 2. Download [mql_unit_test](https://github.com/vivazzi/mql_unit_test/) and copy `mql_unit_test/Include/unit_test.mqh` folder to `<TERMINAL DIR>/MQL(4/5)/Include`
-3. Compile and run TestRequest.ex4 in terminal in a window of any trading pair.
+3. Compile `TestRequest.mq4` and run `TestRequest.ex4` in terminal in a window of any trading pair.
 4. Look test result in `<TERMINAL DIR>/Files/TestRequests_unit_test_log.txt`
 
 # CONTRIBUTING
 
 To reporting bugs or suggest improvements, please use the [issue tracker](https://github.com/vivazzi/mql_requests/issues).
 
-Thank you very much, that you would like to contribute to requests. Thanks to the [present, past and future contributors](https://github.com/vivazzi/mql_requests/contributors).
+Thank you very much, that you would like to contribute to mql_requests. Thanks to the [present, past and future contributors](https://github.com/vivazzi/mql_requests/contributors).
 
 If you think you have discovered a security issue in our code, please do not create issue or raise it in any public forum until we have had a chance to deal with it.
 **For security issues use security@vuspace.pro**
