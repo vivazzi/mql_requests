@@ -43,8 +43,6 @@ response = requests.get("https://site.com/some/url?par=foo&par_2=bar");
 response = requests.get("https://site.com/some/url", "par=foo&par_2=bar");
 response = requests.get("https://site.com/some/url?par=foo", "par_2=bar");
 Print("Response parameters: " + response.parameters);
-Print("Response parameters: " + response.parameters);
-Print("Response parameters: " + response.parameters);
 // "Response parameters: par=foo&par_2=bar"
 ```
 
@@ -183,6 +181,6 @@ If you think you have discovered a security issue in our code, please do not cre
 
 # LICENCE
 
-Copyright © 2021 Artem Maltsev and contributors.
+Copyright © 2022 Artem Maltsev and contributors.
 
 MIT licensed.
